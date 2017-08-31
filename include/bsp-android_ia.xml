@@ -5,7 +5,7 @@
   <project name="IA-Hardware-Composer" path="vendor/intel/external/android_ia/hwcomposer" groups="hwcomposer" remote="graphics" revision="master"/>
   <project name="lighthal" path="vendor/intel/external/android_ia/lights" remote="github" revision="master"/>
   <project name="MemTrack" path="vendor/intel/external/android_ia/memtrack" groups="pdk" remote="github" revision="master"/>
-  <project name="DPTF" path="vendor/intel/external/android_ia/dptf" groups="pdk" remote="github" revision="master"/>
+  <!--project name="DPTF" path="vendor/intel/external/android_ia/dptf" groups="pdk" remote="github" revision="master"/-->
   <project name="efivar" path="external/efivar" groups="pdk" remote="github" revision="master"/>
   <project name="platform_external_efitools" path="external/efitools" remote="github" revision="master"/>
   <project name="powerhal" path="vendor/intel/external/android_ia/powerhal" remote="github" revision="master"/>
@@ -15,7 +15,7 @@
   <project name="external-vulkan_hal" path="vendor/intel/external/android_ia/vulkan" remote="github" revision="master" />
   <project name="minigbm" path="external/minigbm" remote="graphics" revision="master" />
   <project name="libncurses" path="external/libncurses" remote="github" revision="master"/>
-  <project name="powertop" path="external/powertop" remote="github" revision="master"/>
+  <!--project name="powertop" path="external/powertop" remote="github" revision="master"/-->
   <project name="pciutils" path="external/pciutils" remote="github" revision="master"/>
   <project name="bootable-live-installer" path="bootable/liveinstaller" groups="pdk" remote="github" revision="master" />
   <project name="external-sbsign" path="external/sbsigntool" groups="pdk" remote="github" revision="master" />
@@ -38,7 +38,8 @@
   <project name="pub/scm/linux/kernel/git/firmware/linux-firmware" path="vendor/linux/firmware" remote="kernelorg" revision="695f2d6d82173f4e322d8f834c9849775778022a" />
 
   <!-- Temporary till necessary patches from AOSP master land in Android N branch. We use frameworks-av as a temporary repository for libbcc -->
-  <project name="frameworks-libbcc" path="frameworks/compile/libbcc" remote="github" revision="master" />
+  <project groups="aosp,pdk" name="platform/hardware/bsp/intel" path="hardware/bsp/intel" revision="refs/tags/android-7.1.1_r6" />
+  <!--project name="frameworks-libbcc" path="frameworks/compile/libbcc" remote="github" revision="master" />
   <project name="system-bt" path="system/bt" remote="github" revision="master" />
   <project name="system-core" path="system/core" groups="pdk" remote="github" revision="master" />
   <project name="frameworks-native" path="frameworks/native" remote="github" revision="master" />
@@ -46,5 +47,5 @@
   <project name="bootable-recovery" path="bootable/recovery" remote="github" revision="master" />
   <project name="bionic" path="bionic" remote="github" revision="master" />
   <project name="external-drm_hwcomposer" path="external/drm_hwcomposer" groups="drm_hwcomposer" remote="github" revision="master"/>
-  <project name="external-drm_gralloc" path="external/drm_gralloc" groups="drm_gralloc" remote="github" revision="master"/>
+  <project name="external-drm_gralloc" path="external/drm_gralloc" groups="drm_gralloc" remote="github" revision="master"/-->
 </manifest>
